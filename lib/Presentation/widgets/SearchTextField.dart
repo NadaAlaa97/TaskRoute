@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SearchTextField extends StatefulWidget {
 
@@ -12,7 +13,10 @@ class _SearchTextFieldState extends State<SearchTextField> {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.search, color: Colors.blue,size: 30,),
+        prefixIcon: Padding(
+          padding: const EdgeInsets.all(13.0),
+          child: Icon(FontAwesomeIcons.search, color: Color(0xFF466f95),size: 30,),
+        ),
         hintText: 'What do you search for?',
         hintStyle: TextStyle(
           fontSize: 17,
@@ -20,14 +24,14 @@ class _SearchTextFieldState extends State<SearchTextField> {
         enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(30),
             borderSide: BorderSide(
-              color: Colors.blue,
-              width: 1,
+              color: Color(0xFFb4c9d6),
+              width: 2,
             )
         ),
         focusedBorder:  OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
           borderSide: BorderSide(
-            color: Colors.blue,
+            color: Color(0xFF466f95),
             width: 1,
           ),
         ),
@@ -35,13 +39,13 @@ class _SearchTextFieldState extends State<SearchTextField> {
         border:  OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
           borderSide: BorderSide(
-            color:Colors.blue,
+            color:Color(0xFF466f95),
             width: 1,
           ),
         ),
         constraints: BoxConstraints(
             maxWidth: 25,
-            maxHeight: 60
+            maxHeight: 65
         ),
       ),
     );
