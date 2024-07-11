@@ -147,7 +147,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                                 style: TextStyle(fontSize: 17),
                                               ),
                                             ),
-                                            SizedBox(width: 4.8.w,),
+                                            SizedBox(width: 4.3.w,),
                                             Text((state is ProductLoaded)? '${state.productResponse[index].price * 2}' : '',
                                               style: TextStyle(
                                                 fontSize: 15,
