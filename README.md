@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+ this project is a task to fetch products from an api using a provided design. Managed to implement the design as required.
+ Implemented unit test on the api and it worked successfully.
