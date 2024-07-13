@@ -148,7 +148,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                               ),
                                             ),
                                             SizedBox(width: 4.3.w,),
-                                            Text((state is ProductLoaded)? '${state.productResponse[index].price * 2}' : '',
+                                            Text((state is ProductLoaded) ? '${(state.productResponse[index].price * state.productResponse[index].discountPercentage).toStringAsFixed(1)}' : '',
                                               style: TextStyle(
                                                 fontSize: 15,
                                                 fontWeight: FontWeight.bold,
@@ -156,7 +156,8 @@ class _ProductScreenState extends State<ProductScreen> {
                                                 decorationColor: Color(0xFF6e96b7),
                                                 decoration: TextDecoration.lineThrough,
                                               ),
-                                            )
+                                            ),
+
                                           ],
                                         ),
                                         Row(
